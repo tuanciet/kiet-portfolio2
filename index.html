@@ -6,123 +6,78 @@
 <title>Tuấn Kiệt | Portfolio</title>
 
 <style>
-*{  margin:0
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
-
 body{
-    height:100vh;
+    margin:0;
+    font-family: Arial, sans-serif;
     background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
     display:flex;
     justify-content:center;
     align-items:center;
-    color:white;
+    height:100vh;
 }
 
-.container{
-    width:90%;
-    max-width:900px;
-    backdrop-filter: blur(15px);
-    background: rgba(255,255,255,0.08);
-    border-radius:20px;
-    padding:50px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+.box{
+    background: rgba(255,255,255,0.1);
+    padding:40px;
+    border-radius:15px;
+    width:350px;
+    text-align:center;
+}
+
+img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+    border:3px solid #00ffd5;
 }
 
 h1{
-    font-size:40px;
-    margin-bottom:10px;
+    margin-bottom:5px;
 }
 
-h1 span{
+span{
     color:#00ffd5;
 }
 
-.subtitle{
+p{
     opacity:0.8;
-    margin-bottom:40px;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
-}
-
-.card{
-    background: rgba(255,255,255,0.06);
-    padding:20px;
-    border-radius:15px;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform: translateY(-5px);
-    background: rgba(255,255,255,0.12);
-}
-
-.card h3{
-    margin-bottom:10px;
-    color:#00ffd5;
-}
-
-.contact a{
+a{
     color:#00ffd5;
     text-decoration:none;
 }
 
-.contact a:hover{
+a:hover{
     text-decoration:underline;
-}
-
-footer{
-    margin-top:40px;
-    text-align:center;
-    opacity:0.6;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="box">
+
+    <!-- Ảnh đại diện -->
+    <img src="https://i.pinimg.com/736x/a6/4f/30/a64f307f3d967cd1d54d390c90a4af9e.jpg" alt="avatar">
+
     <h1>Xin chào, mình là <span>Tuấn Kiệt</span></h1>
-    <p class="subtitle">Future Developer | Math Enthusiast | Builder</p>
+    <p>Future Developer | Math Lover</p>
 
-    <div class="grid">
-        <div class="card">
-            <h3>Giới thiệu</h3>
-            <p>Mình yêu thích toán học và lập trình. 
-               Mục tiêu trở thành developer chuyên nghiệp và xây dựng sản phẩm chất lượng.</p>
-        </div>
+    <hr>
 
-        <div class="card">
-            <h3>Kỹ năng</h3>
-            <p>HTML / CSS / JavaScript<br>
-               Giải tích / Logic / Tư duy hệ thống</p>
-        </div>
+    <p><b>Kỹ năng:</b><br>
+    HTML / CSS / JavaScript</p>
 
-        <div class="card contact">
-            <h3>Liên hệ</h3>
-            <p>SĐT: 0965700315</p>
-            <p>Facebook: 
-                <a href="https://www.facebook.com/share/1CyVeYZ9sG/" target="_blank">
-                Truy cập tại đây
-                </a>
-            </p>
-        </div>
+    <hr>
 
-        <div class="card">
-            <h3>Mục tiêu</h3>
-            <p>Không ngừng học hỏi, xây dựng kỹ năng vững chắc và tạo ra sản phẩm thực tế.</p>
-        </div>
-    </div>
-
-    <footer>
-        © 2026 Tuấn Kiệt Võ
-    </footer>
+    <p><b>Liên hệ:</b><br>
+    SĐT: 0965700315<br>
+    Facebook: <a href="https://www.facebook.com/share/1CyVeYZ9sG/" target="_blank">Xem tại đây</a>
+    </p>
 </div>
 
 </body>
